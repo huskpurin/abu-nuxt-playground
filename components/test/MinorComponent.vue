@@ -5,13 +5,18 @@
   </div>
 </template>
 <script>
+console.log('js loaded');
+
 import BitmovinApi from '@bitmovin/api-sdk';
 
 const bitmovinApi = new BitmovinApi({apiKey: '<YOUR_API_KEY>'});
 
 export default {
+  created() {
+    console.log('created');
+  },
   mounted() {
-    console.log(bitmovinApi);
+    console.log('mounted', bitmovinApi);
   }
 }
 </script>

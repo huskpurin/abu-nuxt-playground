@@ -1,17 +1,17 @@
 <template>
   <div>
-    <h2>my lazy load comp</h2>
     <loading v-if="!isVisible" />
-    <my-comp v-if="isVisible" />
+    <bitmovin v-if="false" />
   </div>
 </template>
 <script>
-import LoadingComp from '@/components/test/Loading.vue';
+import Loading from '@/components/test/Loading.vue';
+// import MyComp from '@/components/test/MinorComponent.vue';
 
 export default {
   components: {
-    loading: LoadingComp,
-    'my-comp': () => import('@/components/test/MinorComponent.vue')
+    loading: Loading,
+    'bitmovin': () => import('@/components/test/MinorComponent.vue')
   },
   data: function () {
     return {
