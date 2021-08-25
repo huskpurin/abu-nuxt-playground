@@ -17,9 +17,9 @@
   </div>
 </template>
 <script>
-const CompA = () => import('@/components/test/A.vue');
-const CompB = () => import('@/components/test/B.vue');
-const CompC = () => import('@/components/test/C.vue');
+const CompA = () => import('@/components/dynamic/A.vue');
+const CompB = () => import('@/components/dynamic/B.vue');
+const CompC = () => import('@/components/dynamic/C.vue');
 
 export default {
   data: function () {
